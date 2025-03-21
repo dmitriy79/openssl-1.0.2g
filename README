@@ -8,6 +8,18 @@
  DESCRIPTION
  -----------
 
+ cd /usr/src
+ wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
+ tar -zxf openssl-1.0.1g.tar.gz
+ cd openssl-1.0.1g
+ ./config
+ make
+ make test
+ make install
+ cd /usr/src
+ rm -rf openssl-1.0.1g.tar.gz
+ rm -rf openssl-1.0.1g
+
  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, fully featured, and Open Source toolkit implementing the
  Secure Sockets Layer (SSLv3) and Transport Layer Security (TLS) protocols as
