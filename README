@@ -109,21 +109,9 @@
  may be sent to openssl-security@openssl.org (PGP key available from the
  key servers).
 
- Please do NOT use this for general assistance or support queries.
- Just because something doesn't work the way you expect does not mean it
- is necessarily a bug in OpenSSL.
-
- You can also make GitHub pull requests. If you do this, please also send
- mail to rt@openssl.org with a link to the PR so that we can more easily
- keep track of it.
-
- HOW TO CONTRIBUTE TO OpenSSL
- ----------------------------
-
- See CONTRIBUTING
-
- LEGALITIES
- ----------
+./config shared enable-ec_nistp_64_gcc_128 -Wl,-rpath=/usr/local/ssl/lib --prefix=/usr/local/ssl
+make -j 4
+make test && sudo make install
 
  A number of nations, in particular the U.S., restrict the use or export
  of cryptography. If you are potentially subject to such restrictions
